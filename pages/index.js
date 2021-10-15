@@ -60,7 +60,7 @@ export default function Home({ smallCards, mediumCards }) {
       </main>
 
 
-      <footer className="grid bg-gray-100 p-5 items-center">
+      <footer className="">
               <Footer />
       </footer>
     </div>
