@@ -1,42 +1,79 @@
 [
   {
-    "img": "https://a0.muscache.com/im/pictures/857ca168-3321-4956-b106-6d1c084811cb.jpg?im_q=medq&im_w=240",
-    "location": "Berlin",
-    "distance": "30 min drive"
+    "img": "https://a0.muscache.com/im/pictures/499bb1aa-d322-43df-a3b7-ce688fe113bd.jpg?im_w=960",
+    "location": "Bright studio apartment in Berlin",
+    "title": "Entire rental unit hosted by Suite & Apart",
+    "description": "1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine",
+    "star": 4.83,
+    "price": "€30 / night",
+    "total": "€117 total",
+    "long": 52.53006129662408,
+    "lat": 13.402933935310175
   },
   {
-    "img": "https://a0.muscache.com/im/pictures/8340bd19-ee32-4669-8b10-a8ac7e7735d4.jpg?im_q=medq&im_w=240",
-    "location": "Hamburg",
-    "distance": "3.5 hour drive"
+    "img": "https://a0.muscache.com/im/pictures/3ee57426-4742-4979-801c-acf7710f8806.jpg?im_w=960",
+    "location": "Private room in center of Berlin",
+    "title": "Design apartment with spa and concierge",
+    "description": "2 guest · 3 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen",
+    "star": 4.3,
+    "price": "€40 / night",
+    "total": "€157 total",
+    "long": 52.51843511759278,
+    "lat":  13.386316549601247
   },
   {
-    "img": "https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240",
-    "location": "Leipzig",
-    "distance": "2.5 hour drive"
+    "img": "https://a0.muscache.com/im/pictures/0fe65e4c-e118-4be0-9693-67326e232951.jpg?im_w=960",
+    "location": "Private room in center of Berlin",
+    "title": "Pure Motion Studio, 41 qm, Longstay",
+    "description": "4 guest · 4 bedroom · 4 bed · 2 bathrooms · Free parking · Washing Machine",
+    "star": 3.8,
+    "price": "€35 / night",
+    "total": "€207 total",
+    "long": 52.52288240638731, 
+    "lat": 13.38349600511073
   },
   {
-    "img": "https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240",
-    "location": "Dresden",
-    "distance": "2.5 hour drive"
+    "img": "https://a0.muscache.com/im/pictures/037027be-5cd9-4e22-b45b-447c32152562.jpg?im_w=960",
+    "location": "Private room in center of Berlin",
+    "title": "Cosy, stylish Apartment in the heart of Berlin!",
+    "description": "1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine",
+    "star": 4.1,
+    "price": "€55 / night",
+    "total": "€320 total",
+    "long": 52.53740005247435, 
+    "lat": 13.408636746641921
   },
   {
-    "img": "https://a0.muscache.com/im/pictures/52e8083e-2de2-446d-a860-534eab250541.jpg?im_q=medq&im_w=240",
-    "location": "Nuremberg",
-    "distance": "5 hour drive"
+    "img": "https://a0.muscache.com/im/pictures/miso/Hosting-49070135/original/c55320d9-046e-43d2-9663-66baa94b48bb.jpeg?im_w=960",
+    "location": "Private room in center of Berlin",
+    "title": "Modern Rooms in Schoeneberg with Digital Check-In",
+    "description": "3 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Free parking · Dry Cleaning",
+    "star": 5.0,
+    "price": "€60 / night",
+    "total": "€450 total",
+    "long": 52.49863995201461, 
+    "lat": 13.349464060371645
   },
   {
-    "img": "https://a0.muscache.com/im/pictures/20e74de0-0eb8-4fca-afb8-b111875acdf5.jpg?im_q=medq&im_w=240",
-    "location": "Hanover",
-    "distance": "3.5 hour drive"
+    "img": "https://a0.muscache.com/im/pictures/miso/Hosting-34294913/original/b98a34ce-d29e-42cd-99f2-70189693070f.jpeg?im_w=960",
+    "location": "Private room in center of Berlin",
+    "title": "Nena Apartments Metropolpark Studio",
+    "description": "2 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Washing Machine",
+    "star": 4.23,
+    "price": "€65 / night",
+    "total": "€480 total",
+    "long": 52.496877936781274, 
+    "lat": 13.452494547008074
   },
   {
-    "img": "https://a0.muscache.com/im/pictures/90dcb9c8-2e6a-4ce3-9acb-86d90d335314.jpg?im_q=medq&im_w=240",
-    "location": "Lübeck",
-    "distance": "3.5 hour drive"
-  },
-  {
-    "img": "https://a0.muscache.com/im/pictures/82293cc1-ba0b-4167-85a6-ed133d478c20.jpg?im_q=medq&im_w=240",
-    "location": "Bremen",
-    "distance": "4.5 hour drive"
+    "img": "https://a0.muscache.com/im/pictures/75a6af02-911e-47a8-aefe-267f1e2b3e4c.jpg?im_w=960",
+    "location": "Private room in center of Berlin",
+    "title": "Bohemian Style in the middle of Friedrichshain",
+    "description": "3 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine",
+    "star": 3.85,
+    "price": "€90 / night",
+    "total": "€650 total",
+    "long": 52.5056025460567,
+    "lat":  13.468361307323052
   }
 ]

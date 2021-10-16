@@ -12,7 +12,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/dist/client/router";
 
-function Header() {
+function Header({ placeholder }) {
   // create state for the input field
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
@@ -48,12 +48,12 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 grid grid-cols-2 sm:grid-cols-3 gap-x-5 bg-white shadow-md px-3 py-3 md:px-10 lg:px-20  items-center ">
+    <header className="sticky top-0 z-50 grid grid-cols-3 sm:grid-cols-3 gap-x-5 bg-white shadow-md px-3 py-3 md:px-10 lg:px-20  items-center ">
       {/* left section / logo */}
 
       <div
         onClick={() => router.push("/")}
-        className="hidden relative sm:flex items-center h-8  my-auto"
+        className=" relative sm:flex items-center h-8  my-auto"
       >
         <Image
           className="cursor-pointer"
@@ -65,26 +65,26 @@ function Header() {
       </div>
 
       {/* middle section / search  */}
-      <div className="flex items-center border-2 rounded-full p-2 md:shadow-sm md:-left-px">
+      <div className="flex min-w-[170px] items-center border-2 rounded-full p-2 md:shadow-sm md:-left-px">
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)} // update input field based on the value we write
           className="flex-grow pl-3 bg-transparent outline-none min-w-[100px] text-sm text-gray-600 placeholder-gray-400 "
           type="text"
-          placeholder="Search location"
+          placeholder={placeholder || "Search location"}
         />
         <SearchIcon className="md:inline-flex h-8 w-8 min-w-[2rem] p-2 text-white bg-red-400 rounded-full cursor-pointer" />
       </div>
       {/* right side */}
-      <div className="flex space-x-4 items-center justify-end">
-        <p className="hidden md:inline cursor-pointer font-medium hover:bg-gray-100 px-3 py-2  rounded-full">
+      <div className="flex space-x-2 sm:space-x-4 items-center justify-end">
+        <p className="hidden md:inline-flex cursor-pointer font-medium hover:bg-gray-100 px-3 py-2  rounded-full">
           Become a Host
         </p>
-        <GlobeAltIcon className="h-10 w-10 min-w-[2.5rem] text-gray-500 cursor-pointer hover:bg-gray-100 p-2 rounded-full" />
+        <GlobeAltIcon className="hidden sm:inline-flex sm:h-10 sm:w-10 min-w-[2.5rem] text-gray-500 cursor-pointer hover:bg-gray-100 p-2 rounded-full" />
 
-        <div className="flex border-2 rou rounded-full p-0.5 space-x-2 cursor-pointer hover:shadow-md items-center">
-          <MenuIcon className="h-5 w-5 text-gray-500 ml-2" />
-          <UserCircleIcon className="h-10 w-10 text-gray-500" />
+        <div className="flex border-2 rounded-full p-0.5 space-x-2 cursor-pointer hover:shadow-md items-center">
+          <MenuIcon className="h-5 w-5 text-gray-500 sm:ml-2" />
+          <UserCircleIcon className="hidden sm:inline-flex sm:h-10 sm:w-10 text-gray-500" />
         </div>
       </div>
 

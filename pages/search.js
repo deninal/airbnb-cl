@@ -1,9 +1,10 @@
 import { format } from "date-fns";
 import { useRouter } from "next/dist/client/router";
+import InfoCard from "./components/cards/InfoCard";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 
-function Search() {
+function Search({ searchResults }) {
   // capitalize the first letter of each word
   function capitalize(str) {
     var splitStr = str.toLowerCase().split(" ");
@@ -28,9 +29,9 @@ function Search() {
 
   return (
     <div>
-      <Header />
+      <Header placeholder={`${location} | ${range}`} />
 
-      <main className="flex-grow py-10 px-6">
+      <main className="flex-grow py-4 md:py-10 px-3 md:px-6">
         <section>
           <p className="text-sm">
             300+ stays • {range} • for {nrOfGuests} guests
@@ -47,6 +48,21 @@ function Search() {
             <p className="button">Instant book</p>
             <p className="button">More filters</p>
           </div>
+
+          <div className="flex flex-col my-5">
+            {searchResults?.map((item) => (
+              <InfoCard
+                key={item.img}
+                img={item.img}
+                location={item.location}
+                title={item.title}
+                description={item.description}
+                star={item.star}
+                price={item.price}
+                total={item.total}
+              />
+            ))}
+          </div>
         </section>
       </main>
 
@@ -56,3 +72,15 @@ function Search() {
 }
 
 export default Search;
+
+export async function getServerSideProps() {
+  const searchResults = await fetch("https://jsonkeeper.com/b/I20L").then(
+    (res) => res.json()
+  );
+
+  return {
+    props: {
+      searchResults,
+    },
+  };
+}
