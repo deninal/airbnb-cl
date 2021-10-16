@@ -7,8 +7,8 @@
     "star": 4.83,
     "price": "€30 / night",
     "total": "€117 total",
-    "long": 52.53006129662408,
-    "lat": 13.402933935310175
+    "lat": 52.53006129662408,
+    "long": 13.402933935310175
   },
   {
     "img": "https://a0.muscache.com/im/pictures/3ee57426-4742-4979-801c-acf7710f8806.jpg?im_w=960",
@@ -18,19 +18,19 @@
     "star": 4.3,
     "price": "€40 / night",
     "total": "€157 total",
-    "long": 52.51843511759278,
-    "lat":  13.386316549601247
+    "lat": 52.51843511759278,
+    "long":  13.386316549601247
   },
   {
     "img": "https://a0.muscache.com/im/pictures/0fe65e4c-e118-4be0-9693-67326e232951.jpg?im_w=960",
     "location": "Private room in center of Berlin",
-    "title": "Pure Motion Studio, 41 qm, Longstay",
+    "title": "Pure Motion Studio, 41 qm, latstay",
     "description": "4 guest · 4 bedroom · 4 bed · 2 bathrooms · Free parking · Washing Machine",
     "star": 3.8,
     "price": "€35 / night",
     "total": "€207 total",
-    "long": 52.52288240638731, 
-    "lat": 13.38349600511073
+    "lat": 52.52288240638731, 
+    "long": 13.38349600511073
   },
   {
     "img": "https://a0.muscache.com/im/pictures/037027be-5cd9-4e22-b45b-447c32152562.jpg?im_w=960",
@@ -40,8 +40,8 @@
     "star": 4.1,
     "price": "€55 / night",
     "total": "€320 total",
-    "long": 52.53740005247435, 
-    "lat": 13.408636746641921
+    "lat": 52.53740005247435, 
+    "long": 13.408636746641921
   },
   {
     "img": "https://a0.muscache.com/im/pictures/miso/Hosting-49070135/original/c55320d9-046e-43d2-9663-66baa94b48bb.jpeg?im_w=960",
@@ -51,8 +51,8 @@
     "star": 5.0,
     "price": "€60 / night",
     "total": "€450 total",
-    "long": 52.49863995201461, 
-    "lat": 13.349464060371645
+    "lat": 52.49863995201461, 
+    "long": 13.349464060371645
   },
   {
     "img": "https://a0.muscache.com/im/pictures/miso/Hosting-34294913/original/b98a34ce-d29e-42cd-99f2-70189693070f.jpeg?im_w=960",
@@ -62,8 +62,8 @@
     "star": 4.23,
     "price": "€65 / night",
     "total": "€480 total",
-    "long": 52.496877936781274, 
-    "lat": 13.452494547008074
+    "lat": 52.496877936781274, 
+    "long": 13.452494547008074
   },
   {
     "img": "https://a0.muscache.com/im/pictures/75a6af02-911e-47a8-aefe-267f1e2b3e4c.jpg?im_w=960",
@@ -73,7 +73,7 @@
     "star": 3.85,
     "price": "€90 / night",
     "total": "€650 total",
-    "long": 52.5056025460567,
-    "lat":  13.468361307323052
+    "lat": 52.5056025460567,
+    "long":  13.468361307323052
   }
 ]

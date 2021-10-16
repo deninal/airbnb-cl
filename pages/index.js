@@ -14,9 +14,8 @@ export default function Home({ smallCards, mediumCards }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
       <Header />
-   
+
       <Banner />
 
       <main className="max-w-8xl mx-auto px-8 sm:px-16">
@@ -40,8 +39,7 @@ export default function Home({ smallCards, mediumCards }) {
         {/* Medium Cards Section */}
         <section className="pt-5 mt-10 max-w-7xl">
           <h2 className="text-4xl font-semibold pb-5">Live anywhere</h2>
-          <div className="flex justify-between space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3"> 
-
+          <div className="flex justify-between space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
             {mediumCards?.map((item) => (
               <MediumCard key={item.img} img={item.img} title={item.title} />
             ))}
@@ -51,17 +49,16 @@ export default function Home({ smallCards, mediumCards }) {
         {/* Large Card Section */}
         <section className="pt-5 mt-10 max-w-7xl">
           <LargeCard
-          img='https://a0.muscache.com/im/pictures/5b4dc94a-0b4c-4c27-b50f-9c5a5b93c775.jpg?im_w=720'
-          title='Try hosting'
-          description='Earn extra income and unlock new opportunities by sharing your space.'
-          buttonText='Learn more'
+            img="https://a0.muscache.com/im/pictures/5b4dc94a-0b4c-4c27-b50f-9c5a5b93c775.jpg?im_w=720"
+            title="Try hosting"
+            description="Earn extra income and unlock new opportunities by sharing your space."
+            buttonText="Learn more"
           />
         </section>
       </main>
 
-
       <footer className="">
-              <Footer />
+        <Footer />
       </footer>
     </div>
   );

@@ -3,6 +3,7 @@ import { useRouter } from "next/dist/client/router";
 import InfoCard from "./components/cards/InfoCard";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Map from "./components/map/Map";
 
 function Search({ searchResults }) {
   // capitalize the first letter of each word
@@ -31,10 +32,12 @@ function Search({ searchResults }) {
     <div>
       <Header placeholder={`${location} | ${range}`} />
 
-      <main className="flex-grow py-4 md:py-10 px-3 md:px-6">
-        <section>
+      <main className="xl:flex flex-grow  pl-3 md:pl-6 ">
+        <section className="pr-3 py-4 md:py-10">
           <p className="text-sm">
-            300+ stays • {range} • for {nrOfGuests} guests
+            300+ stays •{" "}
+            <span className="bg-gray-100 p-1 rounded-full">{range}</span> • for{" "}
+            {nrOfGuests} guests
           </p>
           <h1 className="text-3xl font-bold mt-2 mb-6">
             Stays in {capitalize(location)}
@@ -64,6 +67,10 @@ function Search({ searchResults }) {
             ))}
           </div>
         </section>
+
+        <section className="hidden xl:inline-flex min-w-[500px] h-screen sticky top-20 z-40">
+          <Map searchResults={searchResults} />
+        </section>
       </main>
 
       <Footer />
@@ -74,13 +81,13 @@ function Search({ searchResults }) {
 export default Search;
 
 export async function getServerSideProps() {
-  const searchResults = await fetch("https://jsonkeeper.com/b/I20L").then(
+  const searchResults = await fetch("https://jsonkeeper.com/b/3L0W").then(
     (res) => res.json()
   );
 
   return {
     props: {
-      searchResults,
+      searchResults: searchResults,
     },
   };
 }

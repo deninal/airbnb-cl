@@ -17,7 +17,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
           <p className="text-gray-500 text-xs sm:text-sm md:text-base">
             {location}
           </p>
-          <HeartIcon className="h-7  w-7 md:h-10 md:w-10 rounded-full p-1 md:p-2 hover:bg-gray-100 " />
+          <HeartIcon className="h-7  w-7 md:h-10 md:w-10 rounded-full p-1 md:p-2 hover:bg-gray-100 transition duration-200 ease-out" />
         </div>
         <h3 className="text-lg sm:text-xl md:text-2xl sm:-mt-1 md:-mt-3 md:font-light">
           {title}
@@ -33,8 +33,8 @@ function InfoCard({ img, location, title, description, star, price, total }) {
             {star}
           </p>
           <div className="flex flex-col place-items-end items-end">
-              <p className="font-semibold text-lg">{price}</p>
-              <p className="hidden sm:inline-flex text-xs md:text-sm ">{total}</p>
+            <p className="font-semibold text-lg">{price}</p>
+            <p className="hidden sm:inline-flex text-xs md:text-sm ">{total}</p>
           </div>
         </div>
       </div>
