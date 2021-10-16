@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function InfoCard({ img, location, title, description, star, price, total }) {
   return (
-    <div className="sm:flex border my-2 md:my-4 rounded-sm sm:rounded-t-md md:rounded-2xl cursor-pointer hover:shadow-md">
+    <div className="sm:flex border-b py-5 cursor-pointer hover:opacity-70 first:border-t transition duration-200 ease-out">
       <div className="relative h-52 w-full sm:h-52 sm:w-60 md:h-60 md:w-80 flex-shrink-0">
         <Image
-          className="rounded-sm sm:rounded-t-md md:rounded-2xl"
+          className="rounded-sm sm:rounded-md"
           src={img}
           layout="fill"
           objectFit="cover"
@@ -27,12 +27,12 @@ function InfoCard({ img, location, title, description, star, price, total }) {
           {description}
         </p>
 
-        <div className="flex justify-between mt-3">
+        <div className="flex justify-between mt-3 items-end">
           <p className="flex items-center gap-x-1 text-xs sm:text-base md:text-lg font-medium">
             <StarIcon className="h-4 w-4 sm:h-5 sm:w-5" />
             {star}
           </p>
-          <div className="flex flex-col place-items-end">
+          <div className="flex flex-col place-items-end items-end">
               <p className="font-semibold text-lg">{price}</p>
               <p className="hidden sm:inline-flex text-xs md:text-sm ">{total}</p>
           </div>

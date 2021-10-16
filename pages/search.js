@@ -40,7 +40,7 @@ function Search({ searchResults }) {
             Stays in {capitalize(location)}
           </h1>
 
-          <div className="hidden md:inline-flex space-x-2 whitespace-nowrap">
+          <div className="hidden md:inline-flex space-x-2 whitespace-nowrap pb-5">
             {/* button styles are pulled from global.css */}
             <p className="button">Free cancelation</p>
             <p className="button">Type of place</p>
@@ -49,7 +49,7 @@ function Search({ searchResults }) {
             <p className="button">More filters</p>
           </div>
 
-          <div className="flex flex-col my-5">
+          <div className="flex flex-col">
             {searchResults?.map((item) => (
               <InfoCard
                 key={item.img}
