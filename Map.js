@@ -10,7 +10,6 @@ function Map({ searchResults }) {
     latitude: result.lat,
   }));
 
-
   const center = getCenter(coordinates); // here we have the coordinates of the center of the searchResults
 
   const [viewport, setViewport] = useState({
@@ -31,7 +30,7 @@ function Map({ searchResults }) {
       {searchResults.map((result) => (
         <div key={result.long}>
           <Marker longitude={result.long} latitude={result.lat}>
-            <HomeIcon className="h-10 w-10 bg-white p-1.5 rounded-full border cursor-pointer hover:scale-110 transition duration-200 ease-out" />
+            <HomeIcon className="h-10 w-10 bg-white p-1 rounded-full border cursor-pointer hover:scale-110 transition transform duration-200 ease-out" />
           </Marker>
         </div>
       ))}
