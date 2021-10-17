@@ -3,7 +3,7 @@ import { useRouter } from "next/dist/client/router";
 import InfoCard from "./components/cards/InfoCard";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Map from "./components/map/Map";
+import Map from "../Map";
 
 function Search({ searchResults }) {
   // capitalize the first letter of each word
@@ -83,7 +83,9 @@ export default Search;
 export async function getServerSideProps() {
   const searchResults = await fetch("https://jsonkeeper.com/b/3L0W").then(
     (res) => res.json()
+    
   );
+
 
   return {
     props: {

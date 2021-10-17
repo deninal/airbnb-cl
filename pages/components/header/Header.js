@@ -53,7 +53,7 @@ function Header({ placeholder }) {
 
       <div
         onClick={() => router.push("/")}
-        className=" relative sm:flex items-center h-8  my-auto"
+        className=" relative sm:flex items-center h-8  my-auto  max-w-[105px]"
       >
         <Image
           className="cursor-pointer"
