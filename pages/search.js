@@ -32,7 +32,7 @@ function Search({ searchResults }) {
     <div>
       <Header placeholder={`${location} | ${range}`} />
 
-      <main className="xl:flex flex-grow  pl-3 md:pl-6 ">
+      <main className="xl:flex flex-grow  pl-3 md:pl-6 w-full">
         <section className="pr-3 py-4 md:py-10">
           <p className="text-sm">
             300+ stays •{" "}
