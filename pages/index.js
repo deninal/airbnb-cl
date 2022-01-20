@@ -18,7 +18,7 @@ export default function Home({ smallCards, mediumCards }) {
 
       <Banner />
 
-      <main className="max-w-8xl mx-auto px-8 sm:px-16">
+      <main className="flex flex-col justify-center max-w-8xl mx-auto px-8 sm:px-16">
         {/* Small Cards Section */}
         <section className="pt-5 mt-3 max-w-7xl">
           <h2 className="text-4xl font-semibold pb-5">Explore nearby</h2>
